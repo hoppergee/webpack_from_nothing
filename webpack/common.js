@@ -1,11 +1,14 @@
 const HtmlPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   module: {
     rules: [
       {
         test: /.css$/,
-        use: 'css-loader'
+        use: ExtractTextPlugin.extract({
+          use: 'css-loader'
+        })
       }
     ]
   },

@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jasmine": "^3.1.0",
     "karma": "^2.0.4",
     "karma-jasmine": "^1.1.2",
