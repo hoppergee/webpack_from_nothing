@@ -17,8 +17,12 @@
     "karma-webpack": "^3.0.0",
     "webpack-cli": "^3.0.8"
   },
+  "config": {
+    "webpack_args": " --config webpack.config.js --display-error-details"
+  },
   "scripts": {
-    "webpack": "webpack --config webpack.config.js --display-error-details",
+    "webpack": "webpack $npm_package_config_webpack_args",
+    "prod": "webpack $npm_package_config_webpack_args -p --env=production",
     "karma": "karma start spec/karma.conf.js --single-run --no-color"
   }
 }
