@@ -1,9 +1,9 @@
-const HtmlPlugin = require('html-webpack-plugin')
+const HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
   plugins: [
     new HtmlPlugin({
-      templates: "./html/index.html"
+      template: "./html/index.html"
     })
   ],
   entry: './js/index.js'
