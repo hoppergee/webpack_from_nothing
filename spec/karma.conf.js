@@ -5,7 +5,7 @@ module.exports = function(config) {
       '**/*.spec.js'
     ],
     preprocessors: {
-      '**/*.spec.js': [ 'webpack', 'sourcemap' ]
+      '**/*.spec.js': [ 'webpack', 'sourcemap', 'babel' ]
     },
     webpack: require('../webpack.config.js'),
     browsers: ['PhantomJS']
