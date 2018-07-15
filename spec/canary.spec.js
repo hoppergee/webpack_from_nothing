@@ -33,7 +33,8 @@ describe("markdownPreviewer", function() {
       var submitHandler = markdownPreviewer.attachPreviewer(document, "source", "preview");
       source.value = "This is _some markdown_";
       submitHandler(event);
-      expect(preview.innerHTML).toBe("<p>This is <em>some markdown</em></p>");
+      expect(preview.innerHTML).toBe("<p>This is <i>some markdown</em></p>")
+      // expect(preview.innerHTML).toBe("<p>This is <em>some markdown</em></p>");
       expect(event.preventDefaultCalled).toBe(true);
     });
   });

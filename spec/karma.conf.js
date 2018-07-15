@@ -4,12 +4,10 @@ module.exports = function(config) {
     files: [
       '**/*.spec.js'
     ],
-/* start new code */
     preprocessors: {
-      '**/*.spec.js': [ 'webpack' ]
+      '**/*.spec.js': [ 'webpack', 'sourcemap' ]
     },
     webpack: require('../webpack.config.js'),
-/* end new code */
     browsers: ['PhantomJS']
   })
 }

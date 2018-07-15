@@ -6,7 +6,6 @@ var attachPreviewer = function($document, sourceId, previewId) {
         preview = $document.getElementById(previewId);
     preview.innerHTML = markdown.toHTML(text);
     event.preventDefault();
-    throw "aaaaaaa";
   }
 }
 
